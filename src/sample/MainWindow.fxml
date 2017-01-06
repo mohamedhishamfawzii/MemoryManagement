@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="715.0" prefWidth="587.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="780.0" prefWidth="839.0" style="-fx-background-color: #69F0AE;">
+         <children>
+            <JFXComboBox fx:id="algorthimNeeded" layoutX="414.0" layoutY="59.0" prefHeight="27.0" prefWidth="242.0" promptText="         CHOOSE ALGORTHIM" />
+            <JFXTextField fx:id="processName" layoutX="534.0" layoutY="131.0" />
+            <Label layoutX="398.0" layoutY="140.0" prefHeight="33.0" prefWidth="137.0" text="Process name">
+               <font>
+                  <Font name="Nunito Sans Regular" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="398.0" layoutY="202.0" prefHeight="33.0" prefWidth="117.0" text="Process size" />
+            <JFXTextField fx:id="processSize" layoutX="535.0" layoutY="195.0" />
+            <JFXListView fx:id="listView" editable="true" prefHeight="715.0" prefWidth="367.0" style="-fx-background-color: #311B92;" />
+            <JFXColorPicker fx:id="colorPicker" layoutX="574.0" layoutY="273.0" />
+            <Label layoutX="400.0" layoutY="273.0" prefHeight="27.0" prefWidth="117.0" text="Process color" />
+            <JFXButton layoutX="426.0" layoutY="350.0" onAction="#allocate" prefHeight="93.0" prefWidth="242.0" style="-fx-background-color: #311B92;" text="Allocate" textFill="WHITE">
+               <font>
+                  <Font name="Nunito Sans Regular" size="39.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="processDeallocatedName" layoutX="451.0" layoutY="576.0" maxWidth="191.0" minWidth="144.0" prefHeight="33.0" prefWidth="191.0" />
+            <JFXButton layoutX="493.0" layoutY="629.0" onAction="#deallocate" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #311B92;" text="Deallocate" textFill="WHITE" />
+            <JFXButton layoutX="48.0" layoutY="593.0" onAction="#viewMemory" prefHeight="72.0" prefWidth="252.0" style="-fx-background-color: #69F0AE;" text="simulate memory">
+               <font>
+                  <Font name="Nunito Sans Regular" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
